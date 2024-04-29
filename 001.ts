@@ -48,4 +48,5 @@ result * 5
 let arr2:number[] = [3,3,6,7,3,2]   //不能包含非number类型的元素了 因为前面限定了number[]
 let arr3:Array<string> = ["3","43"] //这样也行
 let arr4:[number,string,number,boolean] = [1,"fdasf",34,false]  //元组
+let arr5:(number | string)[] = [3,3,6,7,3,2,"string"]   //不能包含非number类型的元素了 因为前面限定了number[]
 
