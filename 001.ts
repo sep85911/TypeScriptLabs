@@ -37,3 +37,15 @@ console.log(cat1.getAge())
 cat1.setAge(12)
 console.log(cat1.getAge())
 
+
+let arr1 = [1,2,3]
+
+const result = arr1.find(item=>item<1) as number
+
+result * 5
+
+
+let arr2:number[] = [3,3,6,7,3,2]   //不能包含非number类型的元素了 因为前面限定了number[]
+let arr3:Array<string> = ["3","43"] //这样也行
+let arr4:[number,string,number,boolean] = [1,"fdasf",34,false]  //元组
+
