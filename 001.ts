@@ -90,4 +90,100 @@ asyncFunction()
 // callAsyncFunction();
 
 
+//ts的监听者模式 ai写的
+// 定义监听者接口
+interface Observer {
+    // 更新方法
+    update(subject: Subject): void;
+}
+
+// 定义主题接口
+interface Subject {
+    // 注册监听者
+    registerObserver(observer: Observer): void;
+    // 移除监听者
+    removeObserver(observer: Observer): void;
+    // 通知所有监听者
+    notifyObservers(): void;
+    // 获取状态
+    getState(): number;
+}
+
+// 具体的主题类
+class ConcreteSubject implements Subject {
+    // 监听者列表
+    private observers: Observer[] = [];
+
+    // 主题的状态
+    private state: number;
+    
+    constructor(initialState: number) {
+        this.state = initialState;
+    }
+
+    // 注册监听者
+    registerObserver(observer: Observer): void {
+        this.observers.push(observer);
+    }
+
+    // 移除监听者
+    removeObserver(observer: Observer): void {
+        const index = this.observers.indexOf(observer);
+        if (index > -1) {
+            this.observers.splice(index, 1);
+        }
+    }
+
+    // 通知所有监听者
+    notifyObservers(): void {
+        for (const observer of this.observers) {
+            observer.update(this);
+        }
+    }
+
+    // 设置状态
+    setState(state: number): void {
+        this.state = state;
+        this.notifyObservers();
+    }
+
+    // 获取状态
+    getState(): number {
+        return this.state;
+    }
+}
+
+// 具体的监听者类
+class ConcreteObserver implements Observer {
+    // 观察者的名字
+    private name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    // 更新方法
+    update(subject: Subject): void {
+        console.log(`${this.name} received update. New state:${subject.getState()}`);
+    }
+}
+
+console.log("---------------------------------------");
+// 使用例子
+const subject = new ConcreteSubject(1);
+const observer1 = new ConcreteObserver('Observer 1');
+const observer2 = new ConcreteObserver('Observer 2');
+
+subject.registerObserver(observer1);
+subject.registerObserver(observer2);
+
+subject.setState(10); // Observer 1 received update. New state: 10
+                       // Observer 2 received update. New state: 10
+
+subject.setState(20); // Observer 1 received update. New state: 20
+                       // Observer 2 received update. New state: 20
+
+subject.removeObserver(observer1);
+
+subject.setState(30); // Observer 2 received update. New state: 30
 
