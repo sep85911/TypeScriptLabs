@@ -187,3 +187,21 @@ subject.removeObserver(observer1);
 
 subject.setState(30); // Observer 2 received update. New state: 30
 
+function fasf() {
+    if (true) {
+        if (true) {
+            if (true) {
+                if (true) {
+                    if (true) {
+                        if (true) {
+                            if (true) {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
