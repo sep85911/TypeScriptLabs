@@ -187,21 +187,42 @@ subject.removeObserver(observer1);
 
 subject.setState(30); // Observer 2 received update. New state: 30
 
-function fasf() {
-    if (true) {
-        if (true) {
-            if (true) {
-                if (true) {
-                    if (true) {
-                        if (true) {
-                            if (true) {
+enum Color{
+    red = 0,
+    blue,
+    pink,
+    green,
+    orange,
+    black,
+    whilte,
+    brown,
+    yellow,
+    purple,
+}
 
-                            }
-                        }
-                    }
-                }
-            }
-        }
+function GetCarColor(){
+
+    let nRand = 3 //Math.random();
+
+    switch(nRand)
+    {
+        case Color.black:
+
+            break;
+        case Color.red:
+            break;
+        case Color.green:
+            console.log("This is:" + Color.green);            
+            break;
+        case Color.whilte:
+            break;
+        case Color.yellow:
+            break;
+        default:
+            break;
     }
 }
+
+GetCarColor()
+
 
