@@ -1,14 +1,18 @@
-let arr911:[string,number] = ["abc",123]
-
-console.log(arr1[1])
 
 function asyncFunction1():Promise<any>{
 
-	return new Promise<any>((resolve,reject)=>{
+	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
-			resolve("123")
-		},2000)
+			resolve(123)
+		},1000)
 
 	})
-
 }
+
+const a = asyncFunction1()
+
+a.then((res2)=>{
+	console.log(res2)
+}).catch((err)=>{
+	console.log(err)
+})
