@@ -170,59 +170,21 @@ class ConcreteObserver implements Observer {
 
 console.log("---------------------------------------");
 // 使用例子
-const subject = new ConcreteSubject(1);
-const observer1 = new ConcreteObserver('Observer 1');
-const observer2 = new ConcreteObserver('Observer 2');
+// const subject = new ConcreteSubject(1);
+// const observer1 = new ConcreteObserver('Observer 1');
+// const observer2 = new ConcreteObserver('Observer 2');
 
-subject.registerObserver(observer1);
-subject.registerObserver(observer2);
+// subject.registerObserver(observer1);
+// subject.registerObserver(observer2);
 
-subject.setState(10); // Observer 1 received update. New state: 10
-                       // Observer 2 received update. New state: 10
+// subject.setState(10); // Observer 1 received update. New state: 10
+//                        // Observer 2 received update. New state: 10
 
-subject.setState(20); // Observer 1 received update. New state: 20
-                       // Observer 2 received update. New state: 20
+// subject.setState(20); // Observer 1 received update. New state: 20
+//                        // Observer 2 received update. New state: 20
 
-subject.removeObserver(observer1);
+// subject.removeObserver(observer1);
 
-subject.setState(30); // Observer 2 received update. New state: 30
-
-enum Color{
-    red = 0,
-    blue,
-    pink,
-    green,
-    orange,
-    black,
-    whilte,
-    brown,
-    yellow,
-    purple,
-}
-
-function GetCarColor(){
-
-    let nRand = 3 //Math.random();
-
-    switch(nRand)
-    {
-        case Color.black:
-
-            break;
-        case Color.red:
-            break;
-        case Color.green:
-            console.log("This is:" + Color.green);            
-            break;
-        case Color.whilte:
-            break;
-        case Color.yellow:
-            break;
-        default:
-            break;
-    }
-}
-
-GetCarColor()
+// subject.setState(30); // Observer 2 received update. New state: 30
 
 
