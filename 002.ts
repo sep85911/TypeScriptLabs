@@ -1,18 +1,8 @@
+const nMax = Math.max(1,2,3,4,56)
 
-function asyncFunction1():Promise<any>{
+console.log(nMax)
 
-	return new Promise((resolve,reject)=>{
-		setTimeout(()=>{
-			resolve(123)
-		},1000)
 
-	})
-}
+const nMax2 = Math.max.apply(null,[321,43,3434,534,13,13,432,2])
 
-const a = asyncFunction1()
-
-a.then((res2)=>{
-	console.log(res2)
-}).catch((err)=>{
-	console.log(err)
-})
+console.log(nMax2)
