@@ -1,3 +1,5 @@
+import * as fs from 'fs';
+
 const sFirst: string = "fuck you!"
 // console.log(sFirst)
 
