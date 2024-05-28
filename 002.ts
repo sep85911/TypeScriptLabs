@@ -1,18 +1,38 @@
+import * as fs from 'fs';
 
-function asyncFunction1():Promise<any>{
+// 同步读取
+const dataSync: string = fs.readFileSync('example.txt', 'utf8');
+// console.log(dataSync);
 
-	return new Promise((resolve,reject)=>{
-		setTimeout(()=>{
-			resolve(123)
-		},1000)
+// 异步读取
+fs.readFile('example.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error('读取文件时出错:', err);
+    return;
+  }
+  console.log(data);
+});
 
-	})
+// 使用 Promise 版本的异步读取（Node.js 10+）
+async function readFileAsync(): Promise<string> {
+  return new Promise((resolve, reject) => {
+    fs.readFile('example.txt', 'utf8', (err, data) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(data);
+      }
+    });
+  });
 }
 
-const a = asyncFunction1()
+async function main() {
+  try {
+    const data: string = await readFileAsync();
+    // console.log(data);
+  } catch (err) {
+    console.error('读取文件时出错:', err);
+  }
+}
 
-a.then((res2)=>{
-	console.log(res2)
-}).catch((err)=>{
-	console.log(err)
-})
+main();
