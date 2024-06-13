@@ -23,3 +23,6 @@ var cat1 = new Cat(1);
 console.log(cat1.getAge());
 cat1.setAge(12);
 console.log(cat1.getAge());
+
+
+const abc1 = new Array("a",1,false)
