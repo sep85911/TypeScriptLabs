@@ -26,3 +26,5 @@ console.log(cat1.getAge());
 
 
 const abc1 = new Array("a",1,false)
+
+console.log("fdsffd")
