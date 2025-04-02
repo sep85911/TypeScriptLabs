@@ -1,22 +1,13 @@
-const highOrderFunction = (operation: (a: number, b: number) => number) => {
-    return operation(5, 3);
-};
 
-console.log(highOrderFunction((a, b) => a + b)); // 输出: 8
-console.log(highOrderFunction((a, b) => a * b)); // 输出: 15
+// let str:string = "fuck windows11";
 
+const arr:Array<any> = new Array<any>()
 
-const obj001 = {
-    name:"Micah",
-    sex:true,
-    age:39
-}
+arr.push(1)
+arr.push(false)
+arr.push(0.34)
 
-const map = new Map([["abc",1],["bcd",2]])
-
-map.forEach((value,key) => {
-    console.log( key + " " + value)
-});
+console.log(arr.length) //打印arr长度
 
 function* gen(){
     yield 1;
@@ -26,3 +17,4 @@ function* gen(){
 
 
 
+export {} //告诉编译器这个文件是一个模块（module），而不是一个全局脚本（script） 1、防止全局命名冲突 2、明确模块意图  副作用：1、无法再导入此模块 2、可能引起混淆

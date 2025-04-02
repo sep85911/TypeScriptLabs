@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+// import * as fs from 'fs';
 
 const sFirst: string = "fuck you!"
 // console.log(sFirst)
@@ -6,7 +6,7 @@ const sFirst: string = "fuck you!"
 let id: number = 1230;
 id = 2321;
 
-let arr = [13, 434, 545, 432, false]
+const arr = [13, 434, 545, 432, false]
 arr[5] = 312
 for (const k in arr) {
     // console.log(arr[k])
