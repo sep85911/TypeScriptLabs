@@ -91,6 +91,8 @@ asyncFunction()
 
 // callAsyncFunction();
 
+let a = 123;
+
 
 //ts的监听者模式 ai写的
 // 定义监听者接口
