@@ -3,9 +3,9 @@ interface IPerson
     name:string;
 }
 
-let a = {name : "Micah",age : 39}
+let a1 = {name : "Micah",age : 39}
 
-let b:IPerson = a;  //a里面没有age也没有关系
+let b:IPerson = a1;  //a里面没有age也没有关系
 
 console.log(b)
 
