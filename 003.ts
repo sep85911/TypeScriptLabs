@@ -23,5 +23,15 @@ const f1 = (r:number) => r * r * 123
 console.log(f1(432))
 
 
-let myArr:number[] = new Array(3)
+let myArr:string[] = new Array("1","2","3")
 
+
+console.log(myArr[2],typeof(myArr[2]))
+
+
+const ddd = {
+    book:"fuck you!"
+}
+
+
+console.log( `fuck me ${ddd.book}` )    //模板字变量，必须要时反引号 ` tab上面那个按键
