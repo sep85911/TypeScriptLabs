@@ -30,8 +30,8 @@ console.log(myArr[2],typeof(myArr[2]))
 
 
 const ddd = {
-    book:"fuck you!"
+    book:`fuck you!`
 }
 
 
-console.log( `fuck me ${ddd.book}` )    //模板字变量，必须要时反引号 ` tab上面那个按键
+console.log(`fuck me ${ddd.book}` )    //模板字变量，必须要时反引号 ` tab上面那个按键
