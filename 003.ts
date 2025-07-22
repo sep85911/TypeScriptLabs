@@ -31,3 +31,6 @@ console.log(`Hello ${ddd.book}` )    //模板字变量，必须要时反引号 `
 // console.log("test")
 
 // console.log("test2")
+
+type xxx = (x: number) => string; // 声明函数类型
+
