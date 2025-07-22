@@ -10,4 +10,3 @@ const ddd = {
     book: `Micah!`
 };
 console.log(`Hello ${ddd.book}`); //模板字变量，必须要时反引号 ` tab上面那个按键
-// console.log("test")
