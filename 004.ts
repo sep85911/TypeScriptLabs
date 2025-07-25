@@ -1,3 +1,4 @@
+//ps:这个文件对于理解箭头在ts中的应用有帮助！
 
 // 定义一个类型，表示数据处理函数
 type DataProcessor = (data: number[]) => number;
@@ -22,3 +23,5 @@ processData(numbers, (arr) => {
 
 // 3. 找出最大值
 processData(numbers, (arr) => Math.max(...arr));
+
+console.log("结束！")
