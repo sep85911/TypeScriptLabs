@@ -25,3 +25,4 @@ processData(numbers, (arr) => {
 processData(numbers, (arr) => Math.max(...arr));
 
 console.log("结束！")
+
