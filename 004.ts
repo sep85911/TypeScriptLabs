@@ -24,5 +24,5 @@ processData(numbers, (arr) => {
 // 3. 找出最大值
 processData(numbers, (arr) => Math.max(...arr));
 
-console.log("结束！")
+console.log("结束！" + `呵呵:${numbers[3]}`)
 
