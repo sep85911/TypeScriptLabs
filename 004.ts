@@ -26,3 +26,22 @@ processData(numbers, (arr) => Math.max(...arr));
 
 console.log("结束！")
 
+let person: 
+{ 
+    [key:string]:any
+}
+
+person = { name: "Tom", age: 123,id:321,anc:321,b:321 }
+
+console.log(person)
+
+
+enum Direction
+{
+    up,
+    down,
+    left,
+    right
+}
+
+console.log(Direction.up)
