@@ -31,14 +31,13 @@ let person:
     [key:string]:any
 }
 
-person = { name: "Tom", age: 123,id:321,anc:321,b:321 }
+// person = { name: "Tom", age: 123,id:321,anc:321,b:321 }
 
-console.log(person)
+// console.log(person)
 
-
-enum Direction
+const enum Direction
 {
-    up,
+    up = 2,
     down,
     left,
     right
