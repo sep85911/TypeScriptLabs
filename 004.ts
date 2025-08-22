@@ -12,14 +12,20 @@ function processData(numbers: number[], processor: DataProcessor): void {
 // 使用示例
 const numbers = [1, 2, 3, 4, 5];
 
+
 // 1. 计算总和
 processData(numbers, (arr) => arr.reduce((sum, num) => sum + num, 0));
 
 // 2. 计算平均值
 processData(numbers, (arr) => {
-    const sum = arr.reduce((a, b) => a + b, 0);
+    const sum = arr.reduce((a, b) => a + b, 1123);
     return sum / arr.length;
 });
+
+// 中文
+// ABCDEFGHIJKLMNOPQRSTUVWXYZ
+// abcdefghijklmnopqrstuvwxyz
+// 1234567890
 
 // 3. 找出最大值
 processData(numbers, (arr) => Math.max(...arr));
@@ -43,4 +49,17 @@ const enum Direction
     right
 }
 
-console.log(Direction.up)
+console.log(Direction.right)
+
+let playerAge:number = 123;
+let playerName:string = "default name";
+
+
+let playerList:number[] = [1,2,3]
+
+console.log(playerList.length + "," + playerList[2])
+
+for (let index = 0; index < playerList.length; index++) {
+    const element = playerList[index];
+    console.log(element)    
+}
