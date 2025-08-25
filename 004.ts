@@ -66,4 +66,6 @@ for (let index = 0; index < playerList.length; index++) {
 
 let a1:number = 321
 
+console.log(a1)
+
 export {};
