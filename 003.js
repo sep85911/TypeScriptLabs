@@ -1,6 +1,6 @@
 "use strict";
 let a1 = { name: "Micah", age: 39 };
-let b = a1; //a里面没有age也没有关系
+let i1 = a1; //a里面没有age也没有关系
 function f(x) {
     console.log(x);
 }
@@ -11,3 +11,5 @@ const ddd = {
     book: `Micah!`
 };
 console.log(`Hello ${ddd.book}`); //模板字变量，必须要时反引号 ` tab上面那个按键
+let a23 = 321;
+const sName = "fuck you";

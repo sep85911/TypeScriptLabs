@@ -1,6 +1,8 @@
 //ps:这个文件对于理解箭头在ts中的应用有帮助！
 
 // 定义一个类型，表示数据处理函数
+
+/*
 type DataProcessor = (data: number[]) => number;
 
 // 主函数，接收一个数组和一个处理函数
@@ -64,4 +66,34 @@ for (let index = 0; index < playerList.length; index++) {
     console.log(element)    
 }
 
-console.log(a1)
+let bSex: boolean = false;
+let nSex: number = 123321;
+let sStr: string = "fuck you!"
+
+let sMyName: string = "fuck yourself"
+
+console.log("sMyName' s Length:" + sMyName.length + "," + sMyName[1])
+*/
+
+// Array:
+
+const aList: string[] = ['a','b','c']
+
+const aList2: Array<number> = [123,321,432];
+
+
+//数组解构
+const [aa, bb]: [number, number] = [1223, 24324];
+let [x,y]:[string,string] = ["fuck","you"]; //正确
+// let x: string, y: string = ["fuck", "you"];  //错误
+// let [x:string, y:string] = ["a","b"]; //错误
+
+
+
+// [x,y] = [y,x] //交换x y 但必须 x y类型相同
+
+console.log(aa)
+console.log(bb)
+
+
+
