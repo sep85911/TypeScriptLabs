@@ -5,7 +5,7 @@ interface IPerson
 
 let a1 = {name : "Micah",age : 39}
 
-let b:IPerson = a1;  //a里面没有age也没有关系
+let i1:IPerson = a1;  //a里面没有age也没有关系
 
 function f( x:IPerson)
 {
@@ -34,5 +34,7 @@ console.log(`Hello ${ddd.book}` )    //模板字变量，必须要时反引号 `
 
 type xxx = (x: number) => string; // 声明函数类型
 
+let a23 = 321;
 
-export {};
+const sName:string = "fuck you"
+
