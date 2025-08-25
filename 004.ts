@@ -63,3 +63,7 @@ for (let index = 0; index < playerList.length; index++) {
     const element = playerList[index];
     console.log(element)    
 }
+
+let a1:number = 321
+
+export {};
