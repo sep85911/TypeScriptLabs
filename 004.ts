@@ -95,5 +95,3 @@ let [x,y]:[string,string] = ["fuck","you"]; //正确
 console.log(aa)
 console.log(bb)
 
-
-
