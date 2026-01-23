@@ -4,7 +4,7 @@ function test(a?:number):number {
     
     if(a){
         console.log(a)
-        return 100
+        return 100 + a
     }
 
     return 1
@@ -18,15 +18,12 @@ console.log(ret)
 const arr001:number[] = [1,2,3,4,5,65,6,7,8,98,9]
 
 
-for (let index = 0; index < arr001.length; index++) {
-    console.log("after")
-
-    const aaa = arr001[index]
+for (const key in arr001) {
     
-    const after = aaa * 100;
+    const element = arr001[key];
 
-    test(after)
+    console.log(element, key)
 
-    console.log(after)
+    test(element);    
     
 }
