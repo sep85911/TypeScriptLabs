@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Typescript",
+      "url": "http://localhost:5500",  // Live Server 默认端口
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,  // 必须启用
+      "trace": true,  // 添加跟踪以便调试
+      "sourceMapPathOverrides": {
+        "../*": "${webRoot}/*",
+        "webpack:///./*": "${webRoot}/*"
+      },
+      "runtimeArgs": [
+        "--disable-cache",  // 禁用缓存
+        "--disable-application-cache"
+      ]
+      
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug TS",
+      // "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/yourfile.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    }
+  ]
+}

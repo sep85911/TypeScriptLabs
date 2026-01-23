@@ -1,12 +1,20 @@
 "use strict";
 console.log("Starting!!!!!!");
 function test(a) {
-    console.log(`年龄：${a}`); //1旁边那个键 + ${变量名}
-    console.log("fsdfsf".length);
+    if (a) {
+        console.log(a);
+        return 100;
+    }
+    return 1;
 }
-function TestF(arg) {
-    let aaa;
-    aaa = arg;
-    return aaa;
+let ret = test();
+console.log(ret);
+ret = test("world");
+console.log(ret);
+const arr001 = [1, 2, 3, 4, 5, 65, 6, 7, 8, 98, 9];
+for (const key in arr001) {
+    const element = arr001[key];
+    const after = element * 100;
+    console.log(after);
 }
-const b = TestF("fuck you!!");
+//# sourceMappingURL=001.js.map

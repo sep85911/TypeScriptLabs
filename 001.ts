@@ -1,19 +1,32 @@
 console.log("Starting!!!!!!")
 
+function test(a?:number):number {
+    
+    if(a){
+        console.log(a)
+        return 100
+    }
 
-function test(a:number) {
-    console.log(`年龄：${a}`)   //1旁边那个键 + ${变量名}
-    console.log("fsdfsf".length)
+    return 1
 }
 
+let ret = test();
 
-function TestF<T>(arg:T):T{
+console.log(ret)
 
-    let aaa:T;
 
-    aaa = arg;
+const arr001:number[] = [1,2,3,4,5,65,6,7,8,98,9]
 
-    return aaa
+
+for (let index = 0; index < arr001.length; index++) {
+    console.log("after")
+
+    const aaa = arr001[index]
+    
+    const after = aaa * 100;
+
+    test(after)
+
+    console.log(after)
+    
 }
-
-const b = TestF<string>("fuck you!!")
