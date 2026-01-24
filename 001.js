@@ -15,4 +15,5 @@ for (const key in arr001) {
     console.log(element, key);
     test(element);
 }
+console.log("fuck you!!");
 //# sourceMappingURL=001.js.map

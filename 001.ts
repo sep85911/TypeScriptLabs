@@ -1,4 +1,4 @@
-console.log("Starting!!!!!!")
+﻿console.log("Starting!!!!!!")
 
 function test(a?:number):number {
     
@@ -27,3 +27,6 @@ for (const key in arr001) {
     test(element);    
     
 }
+
+console.log("fuck you!!")
+
